@@ -1,0 +1,30 @@
+/* ##################################################### */
+/* ##################################################### */
+/* ##                                                 ## */
+/* ## Site ........: Desenvolvimento Internet         ## */
+/* ## Autor .......: Manzano & Toledo                 ## */
+/* ## Data ........: 10 de Janeiro de 2008            ## */
+/* ## Versao ......: 1.0                              ## */
+/* ## Arquivo .....: cssaplic_06.css                  ## */
+/* ##                                                 ## */
+/* ##################################################### */
+/* ##################################################### */
+
+h1 {
+  direction: rtl;
+  text-decoration: overline;
+}
+
+p {
+  text-align: justify;
+  font: normal normal normal 12pt/19pt "Courier New", monospace;
+  text-indent: 19pt;
+}
+
+p.centro {
+  text-align: center;
+  font: oblique normal lighter medium serif;
+  letter-spacing: 10pt;
+  word-spacing: 19pt;
+  text-transform: capitalize;
+}

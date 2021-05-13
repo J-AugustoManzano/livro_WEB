@@ -1,0 +1,29 @@
+/* ##################################################### */
+/* ##################################################### */
+/* ##                                                 ## */
+/* ## Site ........: Desenvolvimento Internet         ## */
+/* ## Autor .......: Manzano & Toledo                 ## */
+/* ## Data ........: 10 de Janeiro de 2008            ## */
+/* ## Versao ......: 1.0                              ## */
+/* ## Arquivo .....: cssaplic_08.css                  ## */
+/* ##                                                 ## */
+/* ##################################################### */
+/* ##################################################### */
+
+h1 {
+  margin-top: 80px;
+  margin-right: 40px;
+  margin-bottom: 30px;
+  margin-left: 60px;
+}
+
+body {
+  margin-top: 12px;
+  margin-right: 70px;
+  margin-bottom: 50px;
+  margin-left: 80px;
+}
+
+p {
+  text-align: justify;
+}

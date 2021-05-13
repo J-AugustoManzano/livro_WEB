@@ -1,0 +1,44 @@
+/* ##################################################### */
+/* ##################################################### */
+/* ##                                                 ## */
+/* ## Site ........: Desenvolvimento Internet         ## */
+/* ## Autor .......: Manzano & Toledo                 ## */
+/* ## Data ........: 10 de Janeiro de 2008            ## */
+/* ## Versao ......: 1.0                              ## */
+/* ## Arquivo .....: cssaplic_17.css                  ## */
+/* ##                                                 ## */
+/* ##################################################### */
+/* ##################################################### */
+
+body {
+  outline-color: blue;
+  outline-style: dashed;
+  outline-width: medium;
+}
+
+p {
+  text-align: justify;
+  outline-color: red;
+  outline-style: solid;
+  outline-width: thin;
+}
+
+a.link {
+  background-color: white;
+  color: blue;
+}
+
+a.vermelho:visited {
+  background-color: white;
+  color: red;
+}
+
+a:hover {
+  background-color: white;
+  color: teal;
+}
+
+a:active {
+  background-color: white;
+  color: yellow;
+}

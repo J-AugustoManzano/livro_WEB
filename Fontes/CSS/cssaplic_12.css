@@ -1,0 +1,55 @@
+/* ##################################################### */
+/* ##################################################### */
+/* ##                                                 ## */
+/* ## Site ........: Desenvolvimento Internet         ## */
+/* ## Autor .......: Manzano & Toledo                 ## */
+/* ## Data ........: 10 de Janeiro de 2008            ## */
+/* ## Versao ......: 1.0                              ## */
+/* ## Arquivo .....: cssaplic_12.css                  ## */
+/* ##                                                 ## */
+/* ##################################################### */
+/* ##################################################### */
+
+h1 {
+
+  /* Cor de fundo e preenchimento */
+
+  background-color: lime;
+  color: black;
+  padding: 80px 40px 30px 60px;
+
+  /* Borda superior */
+
+  border-top-width: 10px;
+  border-top-style: groove;
+  border-top-color: blue;
+
+  /* Borda direita */
+
+  border-right-width: 10px;
+  border-right-style: groove;
+  border-right-color: green;
+
+  /* Borda inferior */
+
+  border-bottom-width: 10px;
+  border-bottom-style: groove;
+  border-bottom-color: navy;
+
+  /* Borda esquerda */
+
+  border-left-width: 10px;
+  border-left-style: groove;
+  border-left-color: teal;
+
+}
+
+body {
+  background-color: lime;
+  color: black;
+  padding: 12px 70px 50px 80px;
+}
+
+p {
+  text-align: justify;
+}

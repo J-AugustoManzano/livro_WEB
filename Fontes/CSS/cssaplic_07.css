@@ -1,0 +1,31 @@
+/* ##################################################### */
+/* ##################################################### */
+/* ##                                                 ## */
+/* ## Site ........: Desenvolvimento Internet         ## */
+/* ## Autor .......: Manzano & Toledo                 ## */
+/* ## Data ........: 10 de Janeiro de 2008            ## */
+/* ## Versao ......: 1.0                              ## */
+/* ## Arquivo .....: cssaplic_07.css                  ## */
+/* ##                                                 ## */
+/* ##################################################### */
+/* ##################################################### */
+
+h1 {
+  background-color: yellow;
+  color: red;
+  line-height: 60pt;
+  text-align: center;
+}
+
+body {
+  background-color: black;
+  color: #ffff00;
+}
+
+
+p {
+  background-image: url("imagens/marble.jpg");
+  background-color: rgb(255, 0, 0);
+  color: navy;
+  text-align: justify;
+}

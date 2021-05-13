@@ -1,0 +1,38 @@
+/* ##################################################### */
+/* ##################################################### */
+/* ##                                                 ## */
+/* ## Site ........: Desenvolvimento Internet         ## */
+/* ## Autor .......: Manzano & Toledo                 ## */
+/* ## Data ........: 10 de Janeiro de 2008            ## */
+/* ## Versao ......: 1.0                              ## */
+/* ## Arquivo .....: cssaplic_04.css                  ## */
+/* ##                                                 ## */
+/* ##################################################### */
+/* ##################################################### */
+
+h1 {
+  text-align: center;
+  font-style: italic;
+  font-variant: small-caps;
+  font-weight: bolder;
+  font-size: 22pt;
+  font-family: "Times New Roman", serif;
+}
+
+p {
+  text-align: justify;
+  font-style: normal;
+  font-variant: normal; 
+  font-weight: normal;
+  font-size: 12pt;
+  line-height: 19pt;
+  font-family: "Courier New", monospace;
+}
+
+p.centro {
+  text-align: center;
+  font-style: oblique;
+  font-weight: lighter;
+  font-size: medium;
+  font-family: serif;
+}

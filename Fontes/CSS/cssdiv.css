@@ -1,0 +1,209 @@
+/* ##################################################### */
+/* ##################################################### */
+/* ##                                                 ## */
+/* ## Site ........: Desenvolvimento Internet         ## */
+/* ## Autor .......: Manzano & Toledo                 ## */
+/* ## Data ........: 10 de Janeiro de 2008            ## */
+/* ## Versao ......: 1.0                              ## */
+/* ## Arquivo .....: cssdiv.css                       ## */
+/* ##                                                 ## */
+/* ##################################################### */
+/* ##################################################### */
+
+
+
+/* ===================================================== */
+/* ==       elementos basicos / corpo externo         == */
+/* ===================================================== */
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background: silver;
+  color: black;
+  font: normal 12px "Nimbus Sans L", "Arial", sans-serif;
+  text-align: justify;
+}
+
+p {
+  background: white;
+  color: navy;
+  font-size: 12px;
+  padding: 12px 30px 12px 0px;
+  text-align: justify;
+}
+
+h1 {
+  background: white;
+  color: black;
+  font-size: 14px;
+  padding-top: 4px;
+  padding-bottom: 12px;
+}
+
+h2, h3 {
+  background: white;
+  color: black;
+  margin-bottom: 14px;
+  padding-top: 6px;
+}
+
+
+
+/* ===================================================== */
+/* ==      elemento estrutural / corpo interno        == */
+/* ===================================================== */
+
+#estrutura {
+  background: white;
+  color: black;
+  margin: 0px auto;
+  width: 780px;
+}
+
+
+
+/* ===================================================== */
+/* ==                    cabecalho                    == */
+/* ===================================================== */
+
+#cabecalho {
+  background: teal;
+  color: aqua;
+  height: 80px;
+  margin: 0px auto;
+  text-align: center;
+  width: 780px;
+}
+
+
+
+/* ===================================================== */
+/* ==               titulo do cabecalho               == */
+/* ===================================================== */
+
+#titulo-cabecalho {
+  padding-top: 20px;
+}
+
+#titulo-cabecalho h1 {
+  background: teal;
+  color: aqua;
+  font-size: 30px;
+}
+
+
+
+/* ===================================================== */
+/* ==                    menu superior                == */
+/* ===================================================== */
+
+#menu-superior {
+  background: navy;
+  color: yellow;
+  border-top: 1px solid silver;
+  font-weight: bold;
+  font-size: 15px;
+  height: 44px;
+  margin: 0px auto;
+  padding: 0px 18px;
+}
+
+#menu-superior a {
+  background: navy;
+  color: yellow;
+  line-height: 44px;
+  margin-right: 12px;
+  padding: 3px 4px;
+  text-decoration: none;
+}
+
+#menu-superior a:hover {
+  background: navy;
+  color: white;
+}
+
+
+
+/* ===================================================== */
+/* ==                    principal                    == */
+/* ===================================================== */
+
+#principal {
+  display: table;
+}
+
+
+
+/* ===================================================== */
+/* ==                   menu esquerdo                 == */
+/* ===================================================== */
+
+#menu-esquerdo {
+  float: left;
+  width: 180px;
+}
+
+#menu-esquerdo ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+#menu-esquerdo li {
+  border-top: 1px solid silver;
+  font-size: 13px;
+  list-style: none;
+}
+
+#menu-esquerdo li a {
+  background: navy;
+  color: white;
+  display: block;
+  padding: 8px 4px 8px 24px;
+  text-decoration: none;
+}
+
+#menu-esquerdo li a:hover {
+  background: navy;
+  color: aqua;
+}
+
+
+
+/* ===================================================== */
+/* ==                    conteudo                     == */
+/* ===================================================== */
+
+#conteudo {
+  float: right;
+  margin-left: 20px;
+  padding-left: 12px;
+  padding-top: 12px;
+  width: 565px;
+}
+
+
+
+/* ===================================================== */
+/* ==                      rodape                     == */
+/* ===================================================== */
+
+#rodape {
+  background: navy;
+  border-top: 1px solid silver;
+  color: yellow;
+  font-size: 11px;
+  line-height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  text-align: center;
+  width: 780px;
+}
+
+
+/* ##################################################### */
+
