@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<!-- ##################################################### -->
+<!-- ##################################################### -->
+<!-- ##                                                 ## -->
+<!-- ## Site ........: Desenvolvimento Internet         ## -->
+<!-- ## Autor .......: Manzano & Toledo                 ## -->
+<!-- ## Data ........: 18 de Fevereiro de 2010          ## -->
+<!-- ## Versao ......: 1.0                              ## -->
+<!-- ## Arquivo .....: form_11.html                     ## -->
+<!-- ##                                                 ## -->
+<!-- ##################################################### -->
+<!-- ##################################################### -->
+	
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+  <head>
+
+    <title>
+      Exemplos de Programas em JavaScript
+    </title>
+
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=iso-8859-1" />
+
+  </head>
+
+  <body>
+
+    <form id="MeuCad" action="">
+    <p>
+    <code>
+
+      <label for="pv1" title="Informe o valor 1">
+        Entre o 1o. valor .......:
+      </label>
+      <input type="text" id="pv1" />
+      <br />
+
+      <label for="pv2" title="Informe o valor 2">
+        Entre o 2o. valor .......:
+      </label>
+      <input type="text" id="pv2" />
+      <br />
+
+      <br />
+      <input type="button" value="Somar" onclick="Soma()" />
+
+    </code>
+    </p> 
+    </form> 
+
+    <script type="text/javascript">
+    // <![CDATA[
+
+      /* Formulario com JavaScript 1 */
+
+      var NR1;
+      var NR2;
+      var RESPOSTA;
+
+      function Soma() {
+        NR1 = parseInt(document.getElementById('MeuCad').pv1.value);
+        NR2 = parseInt(document.getElementById('MeuCad').pv2.value);
+        RESPOSTA = NR1 + NR2;
+        alert('A soma equivale a: ' + RESPOSTA.toString());
+      }
+
+    // ]]>
+    </script>
+
+  </body>
+
+</html>

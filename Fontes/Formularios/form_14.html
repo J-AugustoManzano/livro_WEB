@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<!-- ##################################################### -->
+<!-- ##################################################### -->
+<!-- ##                                                 ## -->
+<!-- ## Site ........: Desenvolvimento Internet         ## -->
+<!-- ## Autor .......: Manzano & Toledo                 ## -->
+<!-- ## Data ........: 18 de Fevereiro de 2010          ## -->
+<!-- ## Versao ......: 1.0                              ## -->
+<!-- ## Arquivo .....: form_14.html                     ## -->
+<!-- ##                                                 ## -->
+<!-- ##################################################### -->
+<!-- ##################################################### -->
+	
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+  <head>
+
+    <title>
+      Exemplos de Programas em JavaScript
+    </title>
+
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=iso-8859-1" />
+
+    <script type="text/javascript">
+    // <![CDATA[
+
+      /* Validação de Campos */
+
+      function Verifica() {
+        var NOME     = document.getElementById('Cad').pnome.value;
+        var ENDERECO = document.getElementById('Cad').pend.value;
+        var CEP      = document.getElementById('Cad').pcep.value;
+        var CIDADE   = document.getElementById('Cad').pcidade.value;
+        var EMAIL    = document.getElementById('Cad').pemail.value;
+        var CPF      = document.getElementById('Cad').pcpf.value;
+        if (NOME == '' || ENDERECO == '' || CEP == '' || 
+          CIDADE == '' || EMAIL == '' || CPF == '') {
+          alert('Todos os campos devem estar preenchidos.');
+          return false;
+        }
+      }
+
+    // ]]>
+    </script>
+
+    <script type="text/javascript">
+    // <![CDATA[
+
+      /* Validação de E-mail */
+
+      function Checa() {
+        var EMAIL = document.getElementById('Cad').pemail.value;
+        if (EMAIL.indexOf('@') == -1 || EMAIL.indexOf('.') == -1) {
+          alert('Este e-mail é inválido.');
+          document.getElementById('Cad').pemail.value = '';
+          document.getElementById('Cad').pemail.focus();
+        }
+      }
+
+    // ]]>
+    </script>
+
+  </head>
+
+  <body>
+
+    <p>
+      <b>
+        Formul&aacute;rio de Cadastro
+      </b>
+    </p>
+
+    <form id="Cad" onsubmit="return Verifica()" action="">
+    <p>
+    <code>
+
+      <label for="pnome" title="Informe o nome">
+        Nome .........:
+      </label>
+      <input type="text" id="pnome" size="45" />
+      <br />
+
+      <label for="pend" title="Informe o endereco">
+        Endereço .....:
+      </label>
+      <input type="text" id="pend" size="50" />
+      <br />
+
+      <label for="pcep" title="Informe o CEP">
+        CEP ..........:
+      </label>
+      <input type="text" id="pcep" size="9" />
+      <br />
+
+      <label for="pcidade" title="Informe a cidade">
+        Cidade .......:
+      </label>
+      <input type="text" id="pcidade" size="25" />
+      <br /> 
+
+      <label for="pestado" title="Informe o estado">
+        Estado .......:
+      </label>
+      <select id="pestado" size="1">
+        <option value="AC"> AC </option>
+        <option value="AL"> AL </option>
+        <option value="AM"> AM </option>
+        <option value="AP"> AP </option>
+        <option value="BA"> BA </option>
+        <option value="CE"> CE </option>
+        <option value="DF"> DF </option>
+        <option value="ES"> ES </option>
+        <option value="GO"> GO </option>
+        <option value="MA"> MA </option>
+        <option value="MG"> MG </option>
+        <option value="MS"> MS </option>
+        <option value="PA"> PA </option>
+        <option value="PB"> PB </option>
+        <option value="PE"> PE </option>
+        <option value="PI"> PI </option>
+        <option value="PR"> PR </option>
+        <option value="RJ"> RJ </option>
+        <option value="RN"> RN </option>
+        <option value="RO"> RO </option>
+        <option value="RR"> RR </option>
+        <option value="RS"> RS </option>
+        <option value="SC"> SC </option>
+        <option value="SE"> SE </option>
+        <option value="SP"> SP </option>
+        <option value="TO"> TO </option>
+      </select>
+      <br />
+
+      <label for="pemail" title="Informe o e-mail">
+        E-MAIL .......:
+      </label>
+      <input type="text" id="pemail" size="25" 
+        onblur="Checa()"
+      />
+      <br />
+
+      <label for="pcpf" title="Informe o CPF">
+        CPF ..........:
+      </label>
+      <input type="text" id="pcpf" size="15" />
+      <br />
+
+      <label title="Informe o sexo">
+        Sexo .........:
+      </label>
+      <input type="radio" name="psexo" value="M" checked="checked" />
+        Masculino 
+      <input type="radio" name="psexo" value="F" />          
+        Feminino  
+      <br />
+
+      <br />
+      <input type="reset"  value="Apagar Formul&aacute;rio" />
+      <input type="submit" value="Enviar Formul&aacute;rio" />
+
+    </code>
+    </p>
+    </form> 
+
+  </body>
+
+</html>

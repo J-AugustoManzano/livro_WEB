@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<!-- ##################################################### -->
+<!-- ##################################################### -->
+<!-- ##                                                 ## -->
+<!-- ## Site ........: Desenvolvimento Internet         ## -->
+<!-- ## Autor .......: Manzano & Toledo                 ## -->
+<!-- ## Data ........: 18 de Fevereiro de 2010          ## -->
+<!-- ## Versao ......: 1.0                              ## -->
+<!-- ## Arquivo .....: form_10.html                     ## -->
+<!-- ##                                                 ## -->
+<!-- ##################################################### -->
+<!-- ##################################################### -->
+	
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+  <head>
+
+    <title>
+      Exemplos de Programas em JavaScript
+    </title>
+
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=iso-8859-1" />
+
+  </head>
+
+  <body>
+
+    <form id="MeuForm" action="">
+    <p>
+    <code>
+
+      <label for="pnome" title="Informe o nome">
+        Entre o nome ..........:
+      </label>
+      <input type="text" id="pnome" />
+      <br />
+
+      <label for="psobre" title="Informe o sobrenome">
+        Entre o sobrenome .....:
+      </label>
+      <input type="text" id="psobre" />
+      <br />
+
+      <br />
+      <input type="button" value="Concatenar" 
+        onclick="MostraNome()" 
+      />
+
+    </code>
+    </p>
+    </form> 
+
+    <script type="text/javascript">
+    // <![CDATA[
+
+      /* Formulario com JavaScript 1 */
+
+      var NOME;
+      var SOBRENOME;
+      var NOMECOMPLETO;
+
+      function MostraNome() {
+        NOME = document.getElementById('MeuForm').pnome.value;
+        SOBRENOME = document.getElementById('MeuForm').psobre.value;
+        NOMECOMPLETO = NOME + ' ' + SOBRENOME;
+        alert('Oi ' + NOMECOMPLETO);
+      }
+
+    // ]]>
+    </script>
+
+  </body>
+
+</html>
