@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<!-- ##################################################### -->
+<!-- ##################################################### -->
+<!-- ##                                                 ## -->
+<!-- ## Site ........: Desenvolvimento Internet         ## -->
+<!-- ## Autor .......: Manzano & Toledo                 ## -->
+<!-- ## Data ........: 18 de Fevereiro de 2010          ## -->
+<!-- ## Versao ......: 1.0                              ## -->
+<!-- ## Arquivo .....: datahora06.html                  ## -->
+<!-- ##                                                 ## -->
+<!-- ##################################################### -->
+<!-- ##################################################### -->
+	
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+  <head>
+
+    <title>
+      Exemplos de Programas em JavaScript
+    </title>
+
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=iso-8859-1" />
+
+  </head>
+
+  <body>
+
+    <script type="text/javascript">
+    // <![CDATA[
+
+      /* Data e Hora 6 */
+
+      var RELOGIO = new Date();
+      var HORA    = RELOGIO.getHours();
+      var MINUTO  = RELOGIO.getMinutes();
+      var SEGUNDO = RELOGIO.getSeconds();
+
+      if (HORA <= 9) {
+        HORA = '0' + HORA;
+      }
+      if (MINUTO <= 9) {
+        MINUTO = '0' + MINUTO;
+      }
+      if (SEGUNDO <= 9) {
+        SEGUNDO = '0' + SEGUNDO;
+      }
+
+      document.write(HORA + ':' + MINUTO + ':' + SEGUNDO);
+
+    // ]]>
+    </script>
+
+  </body>
+
+</html>

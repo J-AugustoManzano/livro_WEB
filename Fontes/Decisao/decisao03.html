@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<!-- ##################################################### -->
+<!-- ##################################################### -->
+<!-- ##                                                 ## -->
+<!-- ## Site ........: Desenvolvimento Internet         ## -->
+<!-- ## Autor .......: Manzano & Toledo                 ## -->
+<!-- ## Data ........: 18 de Fevereiro de 2010          ## -->
+<!-- ## Versao ......: 1.0                              ## -->
+<!-- ## Arquivo .....: decisao03.html                   ## -->
+<!-- ##                                                 ## -->
+<!-- ##################################################### -->
+<!-- ##################################################### -->
+	
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+  <head>
+
+    <title>
+      Exemplos de Programas em JavaScript
+    </title>
+
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=iso-8859-1" />
+
+  </head>
+
+  <body>
+
+    <script type="text/javascript">
+    // <![CDATA[
+
+      /* Script com operadores booleanos */
+
+        var A = parseFloat(prompt('Informe lado A:',''));
+        var B = parseFloat(prompt('Informe lado B:',''));
+        var C = parseFloat(prompt('Informe lado C:',''));
+
+        document.write('Lado A: ' + A + '<br>');
+        document.write('Lado B: ' + B + '<br>');
+        document.write('Lado C: ' + C + '<br>');
+
+        if (A<B+C && B<A+C && C<A+B) {
+          if (A==B && B==C) {
+            document.write('Tri&acirc;ngulo Equil&aacute;tero'); } 
+          else {
+            if (A==B || A==C || C==B) {
+              document.write( 'Tri&acirc;ngulo Is&oacute;sceles'); } 
+            else {
+              document.write('Tri&acirc;ngulo Escaleno'); }
+            } 
+          }
+        else {
+         document.write('N&atilde;o &eacute; um tri&acirc;ngulo');
+        }
+
+    // ]]>
+    </script>
+
+  </body>
+
+</html>

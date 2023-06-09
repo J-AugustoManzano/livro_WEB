@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<!-- ##################################################### -->
+<!-- ##################################################### -->
+<!-- ##                                                 ## -->
+<!-- ## Site ........: Desenvolvimento Internet         ## -->
+<!-- ## Autor .......: Manzano & Toledo                 ## -->
+<!-- ## Data ........: 18 de Fevereiro de 2010          ## -->
+<!-- ## Versao ......: 1.0                              ## -->
+<!-- ## Arquivo .....: func01.html                      ## -->
+<!-- ##                                                 ## -->
+<!-- ##################################################### -->
+<!-- ##################################################### -->
+	
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+  <head>
+
+    <title>
+      Exemplos de Programas em JavaScript
+    </title>
+
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=iso-8859-1" />
+
+  </head>
+
+  <body onload="DiaSemana()">
+
+    <script type="text/javascript">
+    // <![CDATA[
+
+      /* Funcao 1 */
+
+      function DiaSemana() {
+        var HOJE = new Date();
+        var DIA = HOJE.getDay();
+        var SEMANA = new Array(6);
+
+        SEMANA[0] = 'Domingo';      
+        SEMANA[1] = 'Segunda-feira';      
+        SEMANA[2] = 'Terca-feira';      
+        SEMANA[3] = 'Quarta-feira';      
+        SEMANA[4] = 'Quinta-feira';      
+        SEMANA[5] = 'Sexta-feira';      
+        SEMANA[6] = 'Sabado';
+
+        document.write(SEMANA[DIA]);      
+      }
+
+    // ]]>
+    </script>
+
+  </body>
+
+</html>

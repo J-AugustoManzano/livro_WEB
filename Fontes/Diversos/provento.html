@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<!-- ##################################################### -->
+<!-- ##################################################### -->
+<!-- ##                                                 ## -->
+<!-- ## Site ........: Desenvolvimento Internet         ## -->
+<!-- ## Autor .......: Manzano & Toledo                 ## -->
+<!-- ## Data ........: 18 de Fevereiro de 2010          ## -->
+<!-- ## Versao ......: 1.0                              ## -->
+<!-- ## Arquivo .....: provento.html                    ## -->
+<!-- ##                                                 ## -->
+<!-- ##################################################### -->
+<!-- ##################################################### -->
+	
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+  <head>
+
+    <title>
+      Exemplos de Programas em JavaScript
+    </title>
+
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=iso-8859-1" />
+
+  </head>
+
+  <body>
+
+    <script type="text/javascript">
+    // <![CDATA[
+
+      /* Script de valor real */
+
+      var HT;
+      var VH;
+      var PD;
+      var TD;
+      var SB;
+      var SL;
+
+      HT = prompt('Entre as horas trabalhadas:','Informe aqui.');
+      VH = prompt('Entre o valor da hora:','Informe aqui.');
+      PD = prompt('Entre o percentual de desconto:','Informe aqui.');
+      SB = parseFloat(HT) * parseFloat(VH);
+      TD = (parseFloat(PD) / 100) * SB;
+      SL = SB - TD;
+
+      document.write('Provento = ', SL);
+
+    // ]]>
+    </script>
+
+  </body>
+
+</html>

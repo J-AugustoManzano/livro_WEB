@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<!-- ##################################################### -->
+<!-- ##################################################### -->
+<!-- ##                                                 ## -->
+<!-- ## Site ........: Desenvolvimento Internet         ## -->
+<!-- ## Autor .......: Manzano & Toledo                 ## -->
+<!-- ## Data ........: 18 de Fevereiro de 2010          ## -->
+<!-- ## Versao ......: 1.0                              ## -->
+<!-- ## Arquivo .....: datahora03.html                  ## -->
+<!-- ##                                                 ## -->
+<!-- ##################################################### -->
+<!-- ##################################################### -->
+	
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+  <head>
+
+    <title>
+      Exemplos de Programas em JavaScript
+    </title>
+
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=iso-8859-1" />
+
+  </head>
+
+  <body>
+
+    <script type="text/javascript">
+    // <![CDATA[
+
+      /* Data e Hora 3 */
+
+      var DATA  = new Date();
+      var DIA   = DATA.getDate();
+      var MES   = DATA.getMonth();
+      var ANO   = DATA.getFullYear();
+      var MESES = new Array(11);
+
+      MESES[ 0] = 'Janeiro';
+      MESES[ 1] = 'Fevereiro';
+      MESES[ 2] = 'Março';
+      MESES[ 3] = 'Abril';
+      MESES[ 4] = 'Maio';
+      MESES[ 5] = 'Junho';
+      MESES[ 6] = 'Julho';
+      MESES[ 7] = 'Agosto';
+      MESES[ 8] = 'Setembro';
+      MESES[ 9] = 'Outubro';
+      MESES[10] = 'Novembro';
+      MESES[11] = 'Dezembro';
+
+      document.write(DIA + ' de ' + MESES[MES] + ' de ' + ANO);
+   
+    // ]]>
+    </script>
+
+  </body>
+
+</html>

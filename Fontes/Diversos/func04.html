@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<!-- ##################################################### -->
+<!-- ##################################################### -->
+<!-- ##                                                 ## -->
+<!-- ## Site ........: Desenvolvimento Internet         ## -->
+<!-- ## Autor .......: Manzano & Toledo                 ## -->
+<!-- ## Data ........: 18 de Fevereiro de 2010          ## -->
+<!-- ## Versao ......: 1.0                              ## -->
+<!-- ## Arquivo .....: func04.html                      ## -->
+<!-- ##                                                 ## -->
+<!-- ##################################################### -->
+<!-- ##################################################### -->
+	
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+  <head>
+
+    <title>
+      Exemplos de Programas em JavaScript
+    </title>
+
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=iso-8859-1" />
+
+    <script type="text/javascript">
+    // <![CDATA[
+
+      /* Funcao 4 */
+
+      function Fatorial(N) {
+        var I;
+        var F = 1;
+        for (I=1; I<=N; I++) {
+          F*=I;
+        }
+        document.write(F);
+      }
+
+    // ]]>
+    </script>
+
+  </head>
+
+  <body>
+
+    <script type="text/javascript">
+    // <![CDATA[
+
+      /* Script Principal */
+
+      var VALOR;
+      VALOR = prompt('Entre um valor inteiro:' , '');
+      Fatorial(VALOR);
+
+    // ]]>
+    </script>
+
+  </body>
+
+</html>
