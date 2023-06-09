@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<!-- ##################################################### -->
+<!-- ##################################################### -->
+<!-- ##                                                 ## -->
+<!-- ## Site ........: Desenvolvimento Internet         ## -->
+<!-- ## Autor .......: Manzano & Toledo                 ## -->
+<!-- ## Data ........: 18 de Fevereiro de 2010          ## -->
+<!-- ## Versao ......: 1.0                              ## -->
+<!-- ## Arquivo .....: recaux_08.html                   ## -->
+<!-- ##                                                 ## -->
+<!-- ##################################################### -->
+<!-- ##################################################### -->
+	
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+  <head>
+
+    <title>
+      Exemplos de Programas em JavaScript
+    </title>
+
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=iso-8859-1" />
+
+    <style type="text/css">
+      div {text-align: center;}
+      body {background-color: #0000aa; color:#ffffff;}
+    </style>
+
+  </head>
+
+  <body>
+
+    <script type="text/javascript">
+    // <![CDATA[
+
+      var BANNER = Math.round(Math.random() * 4 + 1);
+      var END, TXT;
+      switch (BANNER) {
+        case 1 : END = 'http://www.banner1.com.br';
+                 TXT = 'Banner 1 - Revista Informática Brasil';
+                 break;
+        case 2 : END = 'http://www.banner2.com.br';
+                 TXT = 'Banner 2 - Sapataria Novo Horizonte';
+                 break;
+        case 3 : END = 'http://www.banner3.com.br';
+                 TXT = 'Banner 3 - Padaria Pão de Ontem';
+                 break;
+        case 4 : END = 'http://www.banner4.com.br';
+                 TXT = 'Banner 4 - Foto e Ótica Prisma Azul';
+                 break;
+        case 5 : END = 'http://www.banner5.com.br';
+                 TXT = 'Banner 5 - Imobiliária Pavão';
+                 break;
+      }
+      document.write('<div><a href="' + END + '" target="_blank">');
+      document.write('<img src="imagens/banner' + BANNER + '.gif"');
+      document.write('width="468" height="60"');
+      document.write('alt="' + TXT + '" border="0" />');
+      document.write('<br /></div>');
+
+    // ]]>
+    </script>
+
+  </body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<!-- ##################################################### -->
+<!-- ##################################################### -->
+<!-- ##                                                 ## -->
+<!-- ## Site ........: Desenvolvimento Internet         ## -->
+<!-- ## Autor .......: Manzano & Toledo                 ## -->
+<!-- ## Data ........: 18 de Fevereiro de 2010          ## -->
+<!-- ## Versao ......: 1.0                              ## -->
+<!-- ## Arquivo .....: recaux_03.html                   ## -->
+<!-- ##                                                 ## -->
+<!-- ##################################################### -->
+<!-- ##################################################### -->
+	
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+  <head>
+
+    <title>
+      Exemplos de Programas em JavaScript
+    </title>
+
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=iso-8859-1" />
+
+  </head>
+
+  <body>
+
+    <script type="text/javascript">
+    // <![CDATA[
+
+      /* Conta dias */
+
+      var HOJ = new Date();
+      var INI = new Date('Apr 26, 1965');
+      var DIA = 24 * 60 * 60 * 1000;
+      var TMP = Math.round((HOJ.getTime() - INI.getTime()) / DIA);
+
+      if (TMP == 1) {
+        document.write(TMP + ' dia no ar.'); }
+      else {
+        document.write(TMP + ' dias no ar.');
+      }
+
+    // ]]>
+    </script>
+
+  </body>
+
+</html>

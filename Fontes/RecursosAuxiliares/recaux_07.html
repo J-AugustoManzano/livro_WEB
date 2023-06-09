@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<!-- ##################################################### -->
+<!-- ##################################################### -->
+<!-- ##                                                 ## -->
+<!-- ## Site ........: Desenvolvimento Internet         ## -->
+<!-- ## Autor .......: Manzano & Toledo                 ## -->
+<!-- ## Data ........: 18 de Fevereiro de 2010          ## -->
+<!-- ## Versao ......: 1.0                              ## -->
+<!-- ## Arquivo .....: recaux_07.html                   ## -->
+<!-- ##                                                 ## -->
+<!-- ##################################################### -->
+<!-- ##################################################### -->
+	
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+  <head>
+
+    <title>
+      Exemplos de Programas em JavaScript
+    </title>
+
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=iso-8859-1" />
+
+    <script type="text/javascript">
+    // <![CDATA[
+
+      /* Relógio Digital por Imagem */
+
+      function MostraHorario() {
+        var RELOGIO = new Date();
+        if (RELOGIO.getHours() < 10) {
+          document.images.HoraDez.src = 'imagens/digito0.gif';
+          document.images.HoraUni.src = 'imagens/digito' + 
+            RELOGIO.getHours() + '.gif'; }
+        else {
+          document.images.HoraDez.src = 'imagens/digito' + 
+            Math.floor(RELOGIO.getHours() / 10) + '.gif';
+          document.images.HoraUni.src = 'imagens/digito' + 
+            (RELOGIO.getHours() % 10) + '.gif';
+        }
+        if (RELOGIO.getMinutes() < 10) {
+          document.images.MinutoDez.src = 'imagens/digito0.gif';
+          document.images.MinutoUni.src = 'imagens/digito' +
+            RELOGIO.getMinutes() + '.gif'; }
+        else {
+         document.images.MinutoDez.src = 'imagens/digito' + 
+           Math.floor(RELOGIO.getMinutes() / 10) + '.gif';
+         document.images.MinutoUni.src = 'imagens/digito' + 
+          (RELOGIO.getMinutes() % 10) + '.gif';
+        }
+        if (RELOGIO.getSeconds() < 10) {
+          document.images.SegundoDez.src = 'imagens/digito0.gif';
+          document.images.SegundoUni.src = 'imagens/digito' + 
+            RELOGIO.getSeconds() + '.gif'; }
+        else {
+          document.images.SegundoDez.src = 'imagens/digito' + 
+            Math.floor(RELOGIO.getSeconds() / 10) + '.gif';
+          document.images.SegundoUni.src = 'imagens/digito' + 
+            (RELOGIO.getSeconds() % 10) + '.gif';
+        }
+        setTimeout('MostraHorario()', 1000);
+      }
+
+    // ]]>
+    </script>
+
+    <style type="text/css">
+      body {background-color: black; color: white;}
+    </style>
+
+  </head>
+
+  <body onload="MostraHorario()">
+
+    <div>
+      <img src="imagens/digito0.gif" id="HoraDez"    alt="" />
+      <img src="imagens/digito0.gif" id="HoraUni"    alt="" />
+      <img src="imagens/ponto.gif"   id="SeparaMin"  alt="" />
+      <img src="imagens/digito0.gif" id="MinutoDez"  alt="" />
+      <img src="imagens/digito0.gif" id="MinutoUni"  alt="" />
+      <img src="imagens/ponto.gif"   id="SeparaSeg"  alt="" />
+      <img src="imagens/digito0.gif" id="SegundoDez" alt="" />
+      <img src="imagens/digito0.gif" id="SegundoUni" alt="" />
+    </div>
+
+  </body>
+
+</html>

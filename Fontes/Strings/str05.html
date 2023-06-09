@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<!-- ##################################################### -->
+<!-- ##################################################### -->
+<!-- ##                                                 ## -->
+<!-- ## Site ........: Desenvolvimento Internet         ## -->
+<!-- ## Autor .......: Manzano & Toledo                 ## -->
+<!-- ## Data ........: 18 de Fevereiro de 2010          ## -->
+<!-- ## Versao ......: 1.0                              ## -->
+<!-- ## Arquivo .....: str05.html                       ## -->
+<!-- ##                                                 ## -->
+<!-- ##################################################### -->
+<!-- ##################################################### -->
+	
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+  <head>
+
+    <title>
+      Exemplos de Programas em JavaScript
+    </title>
+
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=iso-8859-1" />
+
+  </head>
+
+  <body>
+
+    <script type="text/javascript">
+    // <![CDATA[
+
+      /* String 5 */
+
+      var COR = new Array(15);
+      var NOME = new String(prompt('Informe seu NOME:',''));        
+      var I;
+ 
+      COR[ 0] = 'Black';   // preto
+      COR[ 1] = 'Magenta'; // magenta
+      COR[ 2] = 'Green';   // verde escuro
+      COR[ 3] = 'Brown';   // marrom
+      COR[ 4] = 'Olive';   // verde oliva
+      COR[ 5] = 'Silver';  // cinza claro
+      COR[ 6] = 'White';   // branco
+      COR[ 7] = 'Blue';    // azul
+      COR[ 8] = 'Cyan';    // ciano
+      COR[ 9] = 'Gray';    // cinza claro
+      COR[10] = 'Lime';    // verde claro
+      COR[11] = 'Navy';    // azul marinho
+      COR[12] = 'Red';     // vermelho
+      COR[13] = 'Teal';    // azul petroleo
+      COR[14] = 'Yellow';  // amarelo
+
+      for(I=0; I<=14; I++) {
+        document.write(NOME.fontcolor(COR[I]) + '<br>');
+      }   
+
+    // ]]>
+    </script>
+
+  </body>
+
+</html>

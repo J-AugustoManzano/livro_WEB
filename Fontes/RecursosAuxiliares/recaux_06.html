@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<!-- ##################################################### -->
+<!-- ##################################################### -->
+<!-- ##                                                 ## -->
+<!-- ## Site ........: Desenvolvimento Internet         ## -->
+<!-- ## Autor .......: Manzano & Toledo                 ## -->
+<!-- ## Data ........: 18 de Fevereiro de 2010          ## -->
+<!-- ## Versao ......: 1.0                              ## -->
+<!-- ## Arquivo .....: recaux_06.html                   ## -->
+<!-- ##                                                 ## -->
+<!-- ##################################################### -->
+<!-- ##################################################### -->
+	
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+  <head>
+
+    <title>
+      Exemplos de Programas em JavaScript
+    </title>
+
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=iso-8859-1" />
+
+    <script type="text/javascript">
+    // <![CDATA[
+
+      /* Relógio Digital por Caractere */
+
+      function RelogioDigital() {
+        var RELOGIO = new Date();
+        var H       = RELOGIO.getHours();
+        var M       = RELOGIO.getMinutes();
+        var S       = RELOGIO.getSeconds();
+        if (H <= 9) {
+          H = '0' + H;
+        }
+        if (M <= 9) {
+          M = '0' + M;
+        }
+        if (S <= 9) {
+          S = '0' + S;
+        }
+        document.getElementById('Relog').saida.value = H+':'+M+':'+S;
+      }  
+      window.setInterval('RelogioDigital()', 1000);
+
+    // ]]>
+    </script>
+
+  </head>
+
+  <body>
+
+    <form id="Relog" action="">
+    <p>
+    <code>
+      <input type="text" name="saida" size="8" />
+    </code>
+    </p>
+    </form> 
+
+  </body>
+
+</html>
