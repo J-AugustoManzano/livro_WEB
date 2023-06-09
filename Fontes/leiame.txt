@@ -1,3 +1,1 @@
-Copie o conteúdo desta pasta para um único local de seu disco.
-
-Descompacte todos os arquivos no mesmo local juntamente da pasta "CSS".
+Copie o conteúdo desta pasta para um único local de seu disco juntamente da pasta "CSS".
